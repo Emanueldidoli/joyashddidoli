@@ -5,17 +5,18 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+body{
+    background-color: #FFFFFF;
+}
 /* Vista Mobile */
 /* pagina index */
-.grid-contenedor{
-    height: 100vh;
-}
+
 /* .grid-contenedor > * {
     
 } */ 
 
 /* /*encabezado */
-.header{
+header{
     height: 60px;
     background-color:#1b1f2f;
 	position: sticky;
@@ -37,20 +38,50 @@
     color: rgb(235, 240, 245);
 }
 
-.main{
-    height: calc(100vh-60px)
+main{
+    height: 100%;
 }
 /* imagen index */
-.foto{
+/* .foto{
     background-image: url(../multimedia/ring.jpg);
     height: 200px;
     background-size: cover;
     background-position: center;
+    margin-bottom: 20px;
+} */
+
+/* slider de fotos */
+.slider{
+    width: 100%;
 }
-.aside{
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate ease-in;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+aside{
     height: 400px;
     padding: 10px;
-    background-color:#47f0e7;
+    background-color:#FFFFFF;
     text-align: center;
 }
 .tutorial{
@@ -62,10 +93,10 @@
 iframe{
     background-size: cover;
     height: 80%;
-    width: 90%;
+    width: 80%;
 }
 
-.footer{
+footer{
     background-color: #1b1f2f;
     color:aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -74,7 +105,7 @@ iframe{
     padding: 15px;
 }
 /* iconos */
-.footer i{
+footer i{
     letter-spacing: 5px;
     font-size: 15px;
 }
@@ -97,7 +128,7 @@ h1{
 
 /* /*contenedor de titulos */
 .titulos{
-    background-color:#253b94;
+    background-image: linear-gradient(90deg, rgb(57, 195, 241), rgb(56, 56, 240));
     padding: 20px;
 }
 /* pagina nosotros */
@@ -134,6 +165,9 @@ h1{
     width: 100%;
     background-color:#3a5eee;
     border: 2px solid;
+}
+.item:hover {
+    transform: scale(1.1);
 }
 .item1{
     background-image: url(../multimedia/pulsera.jpg);
@@ -238,7 +272,14 @@ h1{
 /* pagina mi cuenta */
 
 /* /*contenedor de cuenta  */
+.micuenta{
+    height: 100vh;
+}
+.iniciarSesion{
+    height: 90%;
+}
 .iniciar{
+    height: 90%;
     background-color: rgb(236, 230, 230);
     margin: 10px;
     border: #111101  solid 1px ;
@@ -293,43 +334,37 @@ h1{
     text-align: center;
 }
 
+/* medias */
+
 
 @media (min-width: 480px){
     .productos{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
     }
+    
 }
 @media (max-width: 640px) {
-    .header ul{
+    header ul{
         display: none;
     }
 }    
 
 /* Vista desktop */
 @media (min-width: 640px) {
-    .grid-contenedor {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "header header"
-        "main aside"
-        "footer footer";
-        grid-template-rows: 60px auto  60px;
+    .slider img{
+        height: 550px;
     }
     .productos{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(3, 200px);
     }
-.header{
-    grid-area: header;  
-}
 
 .menu{
     display:none;
 }
 li a:hover{
-    background: #F9F871;
+    background:#47f0e7;
     transition: .5s;
 }
 
@@ -344,25 +379,17 @@ li a{
     color: aliceblue;
 }
 
-.main{
-    grid-area: main;   
-}
-.foto{
-    height: 100%;
-    background-size: cover;
-}
-.aside{
-    grid-area: aside;
-    height: auto;
-}
+/* .foto{
+    height: 600px;
+    background-size:cover;
+} */
+
 iframe{
     background-size: cover;
     height: 90%;
-    width: 100%;
+    width: 80%;
 }
-.footer{
-    grid-area: footer;
-}
+
 /* fin pagina index */
 
 /* pagina nosotros */
