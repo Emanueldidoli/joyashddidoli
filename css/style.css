@@ -33,10 +33,17 @@ header{
 }
 /* Menu hamburguesa */
 .menu {
-    font-size: 40px;
+    display: flex;
+    text-decoration: none;
+}
+.menu i{
+    cursor: pointer;
+    font-size: 50px;
     margin: 10px;
     color: rgb(235, 240, 245);
 }
+
+
 
 main{
     height: 100%;
@@ -53,6 +60,7 @@ main{
 /* slider de fotos */
 .slider{
     width: 100%;
+    overflow: hidden;
 }
 .slider ul{
     display: flex;
@@ -345,9 +353,45 @@ h1{
     
 }
 @media (max-width: 640px) {
-    header ul{
-        display: none;
-    }
+    
+    /* lista de navegacion */
+ul li {
+    line-height: 55px;
+    font-size: 15px;
+    text-decoration: none;
+    
+} 
+
+li a{
+    color: rgb(240, 244, 248);
+    text-decoration: none;
+}
+li a:hover{
+    background-color:#3a5eee;
+}
+
+nav ul {
+    font-size: 13px;
+    text-decoration: none;
+    background-color:#1b1f2f;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 400px;
+    transition: all 300ms ease;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+}
+#hambur{
+    display: none;
+}
+#hambur:checked ~ nav ul{
+    height: 300px;
+    visibility: visible;
+    opacity: 1;
+}
 }    
 
 /* Vista desktop */
@@ -360,8 +404,20 @@ h1{
         grid-template-rows: repeat(3, 200px);
     }
 
-.menu{
+.menu i{
     display:none;
+}
+#hambur{
+    display: none;
+}
+nav ul {
+    display: flex;
+    font-size: 13px;
+    text-decoration: none;
+    color:#FFFFFF;
+    list-style: none;
+    line-height: 55px;
+    
 }
 li a:hover{
     background:#47f0e7;
@@ -369,14 +425,10 @@ li a:hover{
 }
 
 /* lista de navegacion */
-ul li {
-    display:inline-block; 
-    line-height: 55px;
-    font-size: 15px;
-} 
 
-li a{
+nav li a{
     color: aliceblue;
+    margin-right: 10px;
 }
 
 /* .foto{
