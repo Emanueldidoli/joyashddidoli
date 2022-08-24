@@ -1,69 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Google fonts-->
-    <link rel="preconectar" href="https://fonts.googleapis.com">
-        <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https: //fonts.googleapis.com/css2? family= Roboto & display=swap" rel="hoja de estilo">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="shortcut icon" href="../multimedia/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconectar" href="https://fonts.googleapis.com" />
+    <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto & display=swap" rel="hoja de estilo" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../multimedia/logo.png" type="image/x-icon" />
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <!-- fin link bootstrap -->
+    <link rel="stylesheet" href="css/style.css" />
     <title>JOYAS HD</title>
 </head>
+
 <body>
     <!--encabezado-->
-        <header>
-            <!--logol-->
-                <div ><a href="#"><img src="multimedia/logo.png" class="logo"></a></div>
-                <!--fin logo --> 
-                <!--barra de navegacion-->
-                <div class="menu">
-                    <input type="checkbox" id="hambur">
-                    <label for="hambur">
-                        <i class="fa-solid fa-bars"></i>
-                    </label>
-                    <nav> 
-                        <ul>
-                            <li><a href="#">INICIO</a></li> 
-                            <li><a href="pages/productos.html">PRODUCTOS</a></li>
-                            <li><a href="pages/contacto.html">CONTACTO</a></li>
-                            <li><a href="pages/nosotros.html">NOSOTROS</a></li>
-                            <li><a href="pages/micuenta.html">MI CUENTA</a></li>
-                        </ul>
-                    </nav><!--fin barra de navegacion -->
-            <!-- icono de menu -->
-                </div>
-        </header><!--fin encabezado-->
-        <main > <!--seccion principal-->
-            <!--foto principal-->
-            <div class="slider">
-                <ul>
-                    <li><img src="multimedia/ring.jpg" alt=""></li>
-                    <li><img src="multimedia/anillos.jpg" alt=""></li>
-                    <li><img src="multimedia/reloj.jpg" alt=""></li>
-                    <li><img src="multimedia/colgante.jpg" alt=""></li>
+    <header >
+        <!-- navbar inicia -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">JOYAS HD<img src="./multimedia/logo.png" alt="JOYAS HD"
+                    style="width: 40px" />
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/micuenta.html">MI CUENTA</a>
+                    </li>
                 </ul>
             </div>
-            <!-- <div class="foto">
-            </div> -->
-        </main>  
-        <!-- video -->
-        <aside >
-            <h2 class="tutorial">TUTORIAL.- ¿Como saber mi Talla de Anillo?</h2> 
-            <iframe src="https://www.youtube.com/embed/_9VeUnPXg-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-        </aside> <!--fin video-->
-    <!-- fin seccion principal--> 
-        <footer ><!--pie de pagina-->
-            <h2>REDES SOCIALES</h2> 
-            <div class="redes">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
+        </nav>
+        <!-- navbar fin -->
+    </header>
+    <!--fin encabezado-->
+    <!--seccion principal-->
+    <main>
+    <!-- inicia carrusel -->
+        <div class="sec">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./multimedia/amethys.jpg" alt=""/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/anillo.jpg" alt="" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/reloj.jpg" alt="" />
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon flecha"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon flecha"></span>
+                </a>
             </div>
-            <h3>COPYRIGHT 2022 JOYAS HD</h3>
-        </footer><!--fin de pie-->
+        </div>
+        <!-- fin carrusel -->
+    <!-- video -->
+        <div class="jumbotron jumbotron-fluid">
+                <h2 class="tutorial">TUTORIAL.- ¿Como saber mi Talla de Anillo?</h2>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/_9VeUnPXg-Y" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <!-- fin seccion principal-->
+    <!--pie de pagina-->
+    <footer>
+        <p>COPYRIGHT 2022 JOYAS HD</p>
+        <p>REDES SOCIALES</p>
+        <div class="redes">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    <!--fin pie de pagina-->
+    <!-- inicia link javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <!-- fin link javascript  -->
 </body>
+
 </html>

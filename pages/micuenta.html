@@ -6,75 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../multimedia/logo.png" type="image/x-icon">
+     <!-- link bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+ <!-- fin link bootstrap -->
     <link rel="stylesheet" href="../css/style.css">
     <title>JOYAS HD</title>
 </head>
 <body>
     <!--encabezado-->
     <header>
-        <!--logol-->
-        <div ><a href="#"><img src="../multimedia/logo.png" class="logo"></a></div>
-        <!--fin logo --> 
-        <!--barra de navegacion-->   
-        <div class="menu">
-            <input type="checkbox" id="hambur">
-            <!-- icono de menu -->
-            <label for="hambur">
-                <i class="fa-solid fa-bars"></i>
-            </label>    
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="#">MI CUENTA</a></li>
-            </ul>
-    </nav><!--fin barra de navegacion-->
-    </header><!--fin de encabezado-->
-    <main class="micuenta"><!--seccion principal-->
+        <!-- navbar inicia -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html">JOYAS HD<img src="../multimedia/logo.png" alt="JOYAS HD"
+                    style="width: 40px" />
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="micuenta.html">MI CUENTA</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar fin -->
+    </header>
+    <!--fin encabezado-->
+    <!-- seccion principal -->
+    <main class="principal">
         <!--titulo de pagina-->
         <div class="titulos">
             <h1>INICIAR SESIÒN</h1>
         </div>
         <!--fin titulo de pagina-->
-        <div class="iniciarSesion">
-            <!--formulario de cuenta-->
-            <div class="iniciar">
-                <div class="sesion">
-                    <div class="titulo">
-                        <p>YA TENGO UNA CUENTA</p>
-                    </div>
-                    <form>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" required placeholder="tunombre@correo.com">
-                        <label for="pass">Contraseña</label>
-                        <input type="password" name="pass" required>
-                        <button>INICIAR SESIÒN</button>
-                    </form>
-                
-                    <div class="olvidaste"><a href="#"><span>¿Olvidaste tu contraseña?</span></a>
+        <div class="row">
+            <div class="micuenta col-sm-12 col-md-12 col-lg-12">
+                <div class="iniciarSesion ">
+                    <!--formulario de cuenta-->
+                    <div class="iniciar">
+                        <div class="sesion">
+                            <div class="titulo">
+                                <p>YA TENGO UNA CUENTA</p>
+                            </div>
+                            <form>
+                                <label for="email">E-mail</label>
+                                <input class="form-control" type="email" name="email" required placeholder="tunombre@correo.com">
+                                <label for="pass">Contraseña</label>
+                                <input class="form-control"type="password" name="pass" required>
+                                <button type="submit" class="btn btn-primary">INICIAR SESION</button>
+                            </form>
+                            <div class="olvidaste"><a href="#"><span>¿Olvidaste tu contraseña?</span></a>
+                            </div>
+                        </div>
+                        <!--formulario de cuenta-->
+                        <div class="crear">
+                            <div class="clientes">
+                                <strong>Nuevos Clientes</strong>
+                                <p>Crear una cuenta para pagar más rápido, guardar más de una dirección, seguir pedidos y mucho más.</p>
+                            </div>
+                            <div class="cuenta">
+                                <a href="#"><span>Crear una cuenta</span></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!--formulario de cuenta-->
-                <div class="crear">
-                    <div class="clientes">
-                        <strong>Nuevos Clientes</strong>
-                        <p>Crear una cuenta para pagar más rápido, guardar más de una dirección, seguir pedidos y mucho más.</p>
-                    </div>
-                    <div class="cuenta">
-                        <a href="#"><span>Crear una cuenta</span></a>
-                    </div>
-                </div>
+            </div>
         </div>
     </main><!--fin de seccion principal-->
-    <footer><!--pie de pagina-->
-        <h2>REDES SOCIALES</h2> 
+    <!--pie de pagina-->
+    <footer>
+        <p>COPYRIGHT 2022 JOYAS HD</p>
+        <p>REDES SOCIALES</p>
         <div class="redes">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
         </div>
-        <h3>COPYRIGHT 2022 JOYAS HD</h3>
-    </footer><!--fin pie de pagina-->
+    </footer>
+    <!--fin de pie-->
+    <!-- inicia link javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <!-- fin link javascript  -->
+</body>
 </body>
 </html>
