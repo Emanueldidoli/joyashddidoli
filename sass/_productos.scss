@@ -1,0 +1,17 @@
+/* pagina productos */
+
+.fluid{
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: $color3;
+}
+
+.card-title{
+    font-size: 30px;
+}
+.img-fluid{
+    object-fit: cover;
+    width:100%;
+    height: 250px;
+}
