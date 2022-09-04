@@ -13,10 +13,11 @@ header {
 }
 
 /* barra de navegacion */
-.navbar {
+.navbar, footer {
   background-color: rgb(78, 78, 138);
+  font-size: 15px;
 }
-.navbar img {
+.navbar img, footer img {
   border-radius: 20px;
 }
 
@@ -41,7 +42,6 @@ h1 {
 /* footer */
 footer {
   height: 110px;
-  background-color: rgb(78, 78, 138);
   color: aliceblue;
   text-align: center;
 }
@@ -102,7 +102,26 @@ footer {
   border: 1px solid black;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: rgb(224, 220, 220);
+}
+
+.maps-cursive {
+  background-color: blue;
+  font-family: cursive;
+}
+
+.maps-fantasy {
+  background-color: lightblue;
+  font-family: fantasy;
+}
+
+.maps-monospace {
+  background-color: rgb(59, 59, 250);
+  font-family: monospace;
+}
+
+.maps-serif {
+  background-color: rgb(77, 77, 153);
+  font-family: serif;
 }
 
 .card-title {

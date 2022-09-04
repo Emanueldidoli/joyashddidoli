@@ -18,6 +18,7 @@ header{
 /* barra de navegacion */
 .navbar{
     background-color: $color1; 
+    font-size: 15px;
     img{
         border-radius: 20px;
     }
@@ -39,8 +40,8 @@ h1{
 }
 /* footer */
 footer{
+    @extend .navbar;
     height: 110px;
-    background-color:  $color1;
     color:aliceblue;
     text-align: center;
 }
