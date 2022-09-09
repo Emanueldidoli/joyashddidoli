@@ -21,14 +21,14 @@ $mapa: (
 
 );
 
-    @each $sizes, $color in $mapa {
-        .maps-#{$sizes} {
-            background-color: $color;
-            font-family: $sizes;
+    // @each $sizes, $color in $mapa {
+    //     .maps-#{$sizes} {
+    //         background-color: $color;
+    //         font-family: $sizes;
             
-        }
+    //     }
         
-    }
+    // }
 
 .card-title{
     font-size: 30px;

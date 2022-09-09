@@ -12,6 +12,48 @@
     background-color: rgb(1, 19, 19);
 }
 
+.card_landing{
+    background-image: url(../multimedia/anillos.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    margin: 20px;
+    height: 300px !important;
+    object-fit: cover;
+
+}
+
+@mixin cajas(){
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;  
+    font-weight: 700;
+    color: $color3;
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 40%);
+    
+}
+.caja1{
+    background-image: url(../multimedia/rings.jpg);
+    p{
+        @include cajas()
+    }
+}
+.caja2{
+    background-image: url(../multimedia/mystic.jpg);
+    p{
+        @include cajas();
+    }
+}
+.caja3{
+    background-image: url(../multimedia/glass.jpg);
+    p{
+        @include cajas();
+        left: 45%;
+        
+    }
+}
 /* jumbotrom */
 .jumbotron{
     text-align: center;

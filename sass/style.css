@@ -68,6 +68,60 @@ footer {
   background-color: rgb(1, 19, 19);
 }
 
+.card_landing {
+  background-image: url(../multimedia/anillos.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  margin: 20px;
+  height: 300px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.caja1 {
+  background-image: url(../multimedia/rings.jpg);
+}
+.caja1 p {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(224, 220, 220);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.caja2 {
+  background-image: url(../multimedia/mystic.jpg);
+}
+.caja2 p {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(224, 220, 220);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.caja3 {
+  background-image: url(../multimedia/glass.jpg);
+}
+.caja3 p {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(224, 220, 220);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  left: 45%;
+}
+
 /* jumbotrom */
 .jumbotron {
   text-align: center;
@@ -102,26 +156,6 @@ footer {
   border: 1px solid black;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.maps-cursive {
-  background-color: blue;
-  font-family: cursive;
-}
-
-.maps-fantasy {
-  background-color: lightblue;
-  font-family: fantasy;
-}
-
-.maps-monospace {
-  background-color: rgb(59, 59, 250);
-  font-family: monospace;
-}
-
-.maps-serif {
-  background-color: rgb(77, 77, 153);
-  font-family: serif;
 }
 
 .card-title {
