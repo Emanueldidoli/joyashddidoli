@@ -4,31 +4,17 @@
     border: 1px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
-    // background-color: $color3;
 }
 
 .fluid{
     @include card_modificada($color3);
+    background-color: aliceblue;
+    
+}
+.card-body{
+    border-top: solid 1px black;
 }
 
-// mapa
-
-$mapa: (
-    cursive: blue,
-    fantasy: lightblue,
-    monospace: rgb(59, 59, 250),
-    serif: rgb(77, 77, 153),
-
-);
-
-    // @each $sizes, $color in $mapa {
-    //     .maps-#{$sizes} {
-    //         background-color: $color;
-    //         font-family: $sizes;
-            
-    //     }
-        
-    // }
 
 .card-title{
     font-size: 30px;

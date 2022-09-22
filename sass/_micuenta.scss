@@ -1,6 +1,8 @@
 /* pagina mi cuenta */
+
 .micuenta{
     height: 360px;
+    
 }
 .iniciarSesion{
     height: 90%;
@@ -9,13 +11,22 @@
     margin: 10px;
 }
 .sesion button{
-    width: 300px;
+    width: 100%;
     margin-top:10px;
 }
 .olvidaste{
     margin:10px
 }
 
-.principal{
-    height: 100vh;
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+.text{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn{
+    border-radius: 40px ;
 }
