@@ -27,12 +27,15 @@ header{
     color: $color2 !important;
 }
 
-main{
-    min-height: 83vh;
+// main{
+//     // min-height: 75vh;
 
-}
+// }
 body{
     background-image: url(../multimedia/background.jpg);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 8em;
 }
 /* /*titulo de cada pagina */
 h1{
@@ -49,12 +52,14 @@ h1{
 /* footer */
 footer{
     @extend .navbar;
-    position:relative;
+    // position:relative;
+    position: absolute;
     width: 100%;
-    height: 25%;
+    // min-height: 20vh;
     color:aliceblue;
     text-align: center;
-    padding-top: 15px;
+    // padding-top: 15px;
+    margin-top: 12em;
     bottom: 0;
 }
 /* iconos */

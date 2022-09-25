@@ -25,12 +25,11 @@ header {
   color: rgb(0, 174, 255) !important;
 }
 
-main {
-  min-height: 83vh;
-}
-
 body {
   background-image: url(../multimedia/background.jpg);
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 8em;
 }
 
 /* /*titulo de cada pagina */
@@ -49,12 +48,11 @@ h1 {
 
 /* footer */
 footer {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 25%;
   color: aliceblue;
   text-align: center;
-  padding-top: 15px;
+  margin-top: 12em;
   bottom: 0;
 }
 
@@ -230,18 +228,10 @@ footer {
 
 /* pagina nosotros */
 .nleft img {
-  height: 335px;
+  min-height: 50vh;
 }
 
 /* pagina mi cuenta */
-.micuenta {
-  height: 360px;
-}
-
-.iniciarSesion {
-  height: 90%;
-}
-
 .sesion label {
   margin: 10px;
 }
@@ -253,6 +243,10 @@ footer {
 
 .olvidaste {
   margin: 10px;
+}
+
+.check {
+  margin-bottom: 0px;
 }
 
 .row {
