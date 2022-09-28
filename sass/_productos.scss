@@ -1,9 +1,9 @@
 /* pagina productos */
 
 @mixin card_modificada ($color3: rgb(236, 236, 247)){
-    border: 1px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
+    box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.658);
 }
 
 .fluid{
@@ -17,7 +17,11 @@
 
 
 .card-title{
-    font-size: 30px;
+    font-size: 25px;
+    min-height: 4.5rem;
+}
+.card-text{
+    min-height: 1rem;
 }
 .img-fluid{
     object-fit: cover;

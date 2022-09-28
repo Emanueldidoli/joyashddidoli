@@ -13,25 +13,27 @@
 }
 
 .card_landing{
-    background-image: url(../multimedia/anillos.jpg);
     background-size: cover;
     background-position: center;
     border: 1px solid black;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: 300px !important;
     object-fit: cover;
+    background-color:rgba(143, 140, 140, 0.397);
+    background-blend-mode:color;
 
 }
 
 @mixin cajas(){
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 30%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;  
     font-weight: 700;
     color: $color3;
-    text-shadow: 1px 1px 3px rgb(0 0 0 / 40%);
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 80%);
     
 }
 .caja1{
@@ -41,17 +43,15 @@
     }
 }
 .caja2{
-    background-image: url(../multimedia/mystic.jpg);
+    background-image: url(../multimedia/collar.jpg);
     p{
         @include cajas();
     }
 }
 .caja3{
-    background-image: url(../multimedia/glass.jpg);
+    background-image: url(../multimedia/jewellery.jpg);
     p{
         @include cajas();
-        left: 45%;
-        
     }
 }
 /* jumbotrom */
@@ -78,5 +78,8 @@
 .tutorial{
     text-transform:uppercase;
     font-size: 25px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 20px;
+}
+.destacados{
+    text-align: center;
 }

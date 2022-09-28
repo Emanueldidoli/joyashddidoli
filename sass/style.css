@@ -79,14 +79,16 @@ footer {
 }
 
 .card_landing {
-  background-image: url(../multimedia/anillos.jpg);
   background-size: cover;
   background-position: center;
   border: 1px solid black;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   height: 300px !important;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: rgba(143, 140, 140, 0.397);
+  background-blend-mode: color;
 }
 
 .caja1 {
@@ -95,41 +97,40 @@ footer {
 .caja1 p {
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 30%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 25px;
   font-weight: 700;
   color: rgb(224, 220, 220);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .caja2 {
-  background-image: url(../multimedia/mystic.jpg);
+  background-image: url(../multimedia/collar.jpg);
 }
 .caja2 p {
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 30%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 25px;
   font-weight: 700;
   color: rgb(224, 220, 220);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .caja3 {
-  background-image: url(../multimedia/glass.jpg);
+  background-image: url(../multimedia/jewellery.jpg);
 }
 .caja3 p {
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 30%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 25px;
   font-weight: 700;
   color: rgb(224, 220, 220);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  left: 45%;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 /* jumbotrom */
@@ -158,14 +159,18 @@ footer {
 .tutorial {
   text-transform: uppercase;
   font-size: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 20px;
+}
+
+.destacados {
+  text-align: center;
 }
 
 /* pagina productos */
 .fluid {
-  border: 1px solid black;
   margin-top: 10px;
   margin-bottom: 10px;
+  box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.658);
   background-color: aliceblue;
 }
 
@@ -174,7 +179,12 @@ footer {
 }
 
 .card-title {
-  font-size: 30px;
+  font-size: 25px;
+  min-height: 4.5rem;
+}
+
+.card-text {
+  min-height: 1rem;
 }
 
 .img-fluid {
